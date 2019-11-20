@@ -8,9 +8,20 @@ namespace MissionarySite.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home 
-        //Alma
+        // GET: Home
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        // About Page
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        //Contact Page
+        public ActionResult Contact()
         {
             return View();
         }
