@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace MissionarySite.Controllers
 {
     public class HomeController : Controller
-    {//abc
+    {
         // GET: Home
         public ActionResult Index()
         {
