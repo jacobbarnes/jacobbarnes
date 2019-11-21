@@ -95,7 +95,8 @@
     <Content Include="Content\images\Alma Profile.jpg" />
     <Content Include="Content\images\mission.jpg" />
     <Content Include="Content\myStyles\contactStyles.css" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\images\map.jpg" />
+	<Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
