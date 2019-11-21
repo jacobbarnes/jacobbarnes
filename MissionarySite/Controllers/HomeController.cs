@@ -14,6 +14,11 @@ namespace MissionarySite.Controllers
             return View();
         }
 
+        public ActionResult Missions()
+        {
+            return View();
+        }
+
         // About Page
         public ActionResult About()
         {
