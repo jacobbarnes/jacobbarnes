@@ -1,0 +1,21 @@
+﻿@model MissionarySite.Models.Mission
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+
+    @Html.DropDownListFor(model => model.Name, new SelectList(ViewBag.MissionStuff, "Code", "Name"))
+
+    <div class="form-group">
+        <input type="submit" value="MISSION FAQ" class=" btn btn-primary" />
+    </div>
+
+
+}
+
+

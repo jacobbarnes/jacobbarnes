@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MissionarySite.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,31 +9,28 @@ namespace MissionarySite.Controllers
 {
     public class MissionController : Controller
     {
+        public static List<Mission> lstMission = new List<Mission>()
+        {
+            new Mission {Name = "Mission A", Code = "A"},
+            new Mission {Name = "Mission B", Code = "B"},
+            new Mission {Name = "Mission C", Code = "C"}
+        };
+
         // GET: Mission
+        [HttpGet]
         public ActionResult Index()
         {
-            List<SelectListItem> items = new List<SelectListItem>();
-            SelectListItem item1 = new SelectListItem()
-            { Text = "MissionA", Value = "1", Selected = true };
-            SelectListItem item2 = new SelectListItem()
-            { Text = "MissionB", Value = "2", Selected = false };
-            SelectListItem item3 = new SelectListItem()
-            { Text = "MissionC", Value = "3", Selected = false };
-
-            items.Add(item1);
-            items.Add(item2);
-            items.Add(item3);
-
-
-            ViewBag.Mission = items;
-
+            ViewBag.MissionStuff = lstMission;
             return View();
         }
 
-        public ActionResult Show()
+        [HttpPost]
+        public ActionResult Index(Mission oMission)
         {
+            
+            ViewBag.MissionName = oMission.Name;
+            return View("FAQ");
 
-            return View();
         }
     }
 }
