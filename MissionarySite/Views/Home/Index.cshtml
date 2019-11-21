@@ -3,6 +3,26 @@
     ViewBag.Title = "Index";
 }
 
+<link rel="stylesheet" href="~/Content/myStyles/homestyles.css" />
+<style>
+
+    .container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .container .content {
+        position: absolute;
+        top: 50%;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+
 <div class="jumbotron jumbotron-fluid" style=" text-align:center;">
     <h3 class="display-4">Thinking about serving a mission?</h3>
     <a class="btn btn-primary btn-lg" href="#" role="button">Apply Now!</a>
@@ -11,8 +31,25 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4" style="background-image:url(../../Content/images/map.jpg); background-position:center; background-size:cover; height:400px"></div>
-        <div class="col-sm-4" style="background-image:url(../../Content/images/map.jpg); background-position:center; background-size:cover; height:400px"></div>
-        <div class="col-sm-4" style="background-image:url(../../Content/images/map.jpg); background-position:center; background-size:cover; height:400px"></div>
+        <div class="col-sm-4 missions">
+
+            <div class="container" style="margin-top:40%;">
+                <img src="~/Content/images/map.jpg" style="width:100%;"/>
+                <div class="content">
+                    <h1>Heading</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 about" >
+            <div>
+                About Us
+            </div>
+        </div>
+        <div class="col-sm-4 contact" >
+            <div>
+                Contact
+            </div>
+        </div>
+            
     </div>
 </div>
