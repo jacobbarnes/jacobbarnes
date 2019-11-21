@@ -93,6 +93,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\Alma Profile.jpg" />
+    <Content Include="Content\images\Jacob.jpg" />
     <Content Include="Content\images\mail.jpg" />
     <Content Include="Content\images\mission.jpg" />
     <Content Include="Content\myStyles\contactStyles.css" />
