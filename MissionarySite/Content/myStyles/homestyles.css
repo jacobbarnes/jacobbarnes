@@ -18,3 +18,24 @@
     background-size: cover;
     height: 400px
 }
+
+.PMG {
+    background-image: url(../images/Preach-My-Gospel.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px
+}
+
+.missionary {
+    background-image: url(../images/missionary.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px
+}
+
+.dress {
+    background-image: url(../images/dress.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px
+}

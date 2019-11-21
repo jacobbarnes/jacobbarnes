@@ -12,44 +12,76 @@
         margin: 0 auto;
     }
 
-    .container .content {
-        position: absolute;
-        top: 50%;
-        background: rgba(0, 0, 0, 0.5);
-        color: #f1f1f1;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
+        .container .content {
+            position: absolute;
+            top: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
 </style>
+
 
 <div class="jumbotron jumbotron-fluid" style=" text-align:center;">
     <h3 class="display-4">Thinking about serving a mission?</h3>
     <a class="btn btn-primary btn-lg" href="#" role="button">Apply Now!</a>
 </div>
 
+<div style="text-align:center">
+    <p><strong>“Though a man should say but a few words, and his sentences and words be ever so ungrammatical, if he speaks by the power of the Holy Ghost, he will do good.”</strong></p>
+    <p><strong>--Brigham Young</strong></p>
+</div>
+
+<br />
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4 missions">
-
-            <div class="container" style="margin-top:40%;">
-                <img src="~/Content/images/map.jpg" style="width:100%;"/>
+        <a href="@Url.Action("Missions")">
+            <div class="col-sm-4 missions" style="padding:0;">
                 <div class="content">
-                    <h1>Heading</h1>
+                    <h1>Missions</h1>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-4 about" >
-            <div>
-                About Us
+        </a>
+        <a href="https://www.churchofjesuschrist.org/study/manual/preach-my-gospel-a-guide-to-missionary-service/title-page?lang=eng">
+            <div class="col-sm-4 PMG" style="padding:0;">
+                <div class="content">
+                    <h1>Preach My Gospel</h1>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4 contact" >
-            <div>
-                Contact
+        </a>
+        <a href="https://www.churchofjesuschrist.org/callings/missionary?lang=eng">
+            <div class="col-sm-4 missionary" style="padding:0;">
+                <div class="content">
+                    <h1>Missionary Preparation</h1>
+                </div>
             </div>
-        </div>
-            
+        </a>
+    </div>
+    <br />
+    <div class="row">
+        <a href="https://www.churchofjesuschrist.org/callings/missionary/dress-grooming?lang=eng">
+            <div class="col-sm-4 dress" style="padding:0;">
+                <div class="content">
+                    <h1>Dress and Grooming</h1>
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("About")">
+            <div class="col-sm-4 about" style="padding:0;">
+                <div class="content">
+                    <h1>About Us</h1>
+                </div>
+            </div>
+        </a>
+        <a href="@Url.Action("Contact")">
+            <div class="col-sm-4 contact" style="padding:0;">
+                <div class="content">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </a>
     </div>
 </div>

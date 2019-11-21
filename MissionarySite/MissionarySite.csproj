@@ -93,8 +93,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\Alma Profile.jpg" />
+    <Content Include="Content\images\dress.jpg" />
     <Content Include="Content\images\mail.jpg" />
     <Content Include="Content\images\mission.jpg" />
+    <Content Include="Content\images\missionary.jpg" />
+    <Content Include="Content\images\Preach-My-Gospel.jpg" />
     <Content Include="Content\myStyles\contactStyles.css" />
     <Content Include="Content\images\map.jpg" />
     <Content Include="Content\myStyles\homestyles.css" />
